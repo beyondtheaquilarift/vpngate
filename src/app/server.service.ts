@@ -10,7 +10,9 @@ import {Server} from './server';
   providedIn: 'root',
 })
 export class ServerService {
-  apiUrl = 'http://www.vpngate.net/api/iphone/';
+  // 使用 cors-anywhere 避免 CORS 错误
+  apiUrl = 'https://wszzh-cors-anywhere.herokuapp.com/https://www.vpngate.net/api/iphone/';
+  // apiUrl = 'http://www.vpngate.net/api/iphone/';
 
   constructor(private http: HttpClient, private papa: Papa) { }
 

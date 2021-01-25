@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table'
 import { MatSortModule } from '@angular/material/sort';
+import { MatIconModule } from '@angular/material/icon'
+import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RelativeTimePipe } from './relative-time.pipe';
-import {NgPipesModule} from 'ngx-pipes';
+import { NgPipesModule } from 'ngx-pipes';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import {NgPipesModule} from 'ngx-pipes';
     BrowserAnimationsModule,
     MatTableModule,
     MatSortModule,
+    MatIconModule,
     NgPipesModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
